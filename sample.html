@@ -14,6 +14,22 @@
 </head>
 
 <body>
+    <div id="header">
+        header stuff
+    </div>
+
+    <div id="footer">
+        footer stuff
+    </div>
+
+    <div class="content">
+        content here
+    </div>
+
+    <div class="content">
+        content here
+    </div>
+
 
     <div>
         <h1>Heading 1</h1>
@@ -23,10 +39,9 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
 
-        <p>
-            This is a sample HTML file. This is a <span style="color: blue;">sample</span> HTML file. This is a sample
-            HTML
-            file.
+        <p class="paragraghStyle largerFontSize blueText redBg">
+            This is a sample HTML file. This is a <span class="largeBoldBlue">sample</span> HTML file. This is a sample
+            HTML file. This is a sample HTML file. This is a sample HTML file. This is a sample HTML file. This is a sample HTML file.
         </p>
 
         <p>
@@ -108,10 +123,10 @@
     <br></br>
     <div>
         <form>
-            <!-- Talk about input attributes for distinguishing the inputs-->
-            Username: <input type="text"> <br>
-            Password: <input type="password"> <br>
-            Stay logged in: <input type="checkbox"> <br>
+            <!-- placeholder-->
+            Username: <input type="text" name="username" placeholder="Username, E.G: user@uca.edu"> <br>
+            Password: <input type="password" name="password"> <br>
+            Stay logged in: <input type="checkbox" name="stayLoggedIn"> <br>
             For how many hours? <br>
             1 <input type="radio" name="loggedInHours" value="1"> <br>
             4 <input type="radio" name="loggedInHours" value="4"> <br>
@@ -122,24 +137,24 @@
             <input type="hidden" value="25.00">
             <br>
 
-            <select>
+            <select name="singleSelect">
                 <option>Option 1</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
             </select>
 
-            <select multiple>
+            <select name="multipleSelect" multiple>
                 <option>Option 1</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
             </select>
             <br>
-            <textarea></textarea>
+            <textarea name="blogPostText"></textarea>
             <br>
 
             <button>This is a button</button>
 
-            
+
 
 
 
@@ -148,7 +163,7 @@
     </div>
     <br></br>
 
-    <img src="./images/chicken pics.jpg">
+    <img src="./images/chicken pics.jpg" alt="Picture of a brown chicken" title="Mack Chicken">
 
     <script type="text/JavaScript">
         console.log("This is a log message."); // This will log a message to the console
